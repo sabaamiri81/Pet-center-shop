@@ -1,0 +1,94 @@
+.nav {
+    background-color: $body-bg-color;
+    z-index: 1;
+
+    // mobile
+
+    @media (max-width: 768px) {
+
+        & {
+            @include displayFlex(space-between);
+            height: 40px;
+            width: $w-100;
+
+            &-d-none {
+                @include displayNone();
+            }
+
+            &-laptop-d-none {
+                width: 15px;
+                height: 15px;
+                margin: 10px;
+            }
+
+        }
+    }
+
+    // laptop
+
+    @media (min-width: 768px) {
+
+        & {
+            @include fix();
+            @include displayFlex(space-between);
+            height: 65px;
+            width: 85%;
+
+            &-laptop-d-none {
+                @include displayNone();
+            }
+
+
+            &__right {
+                padding-right: 110px;
+
+
+                &--contact {
+                    margin: 0px 10px;
+
+                    // &::before {
+                    //         content:"";
+                    //         background-image: url(/contact.svg);
+                    //         display: block;
+                    //         background-size: $w-100;
+                    //         width: 1.4rem;
+                    //         height: 1.4rem;
+                    //     }
+                }
+
+                &--facebook {
+                    margin: 0px 10px;
+                }
+
+                &--instagram {
+                    margin: 0px 10px;
+                }
+
+                &--youtube {
+                    margin: 0px 5px;
+                }
+            }
+
+            &__left {
+                &--question {
+                    margin-right: 10px;
+                }
+
+                &--stores {
+                    margin: 0px 10px;
+                }
+
+                &--vet {
+                    margin: 0px 10px;
+                }
+
+                &--pet {
+                    margin: 0px 10px;
+                }
+            }
+
+
+        }
+    }
+
+}

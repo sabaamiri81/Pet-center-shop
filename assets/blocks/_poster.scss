@@ -1,0 +1,46 @@
+.poster {
+    @include displayFlex();
+    background-image: url('./images/slideshows/slideshow1.jpg');
+    background-size: cover;
+    width: $w-100;
+
+    // mobile
+
+    @media (max-width: 768px) {
+        & {
+            height: 260px;
+
+            &__title {
+                @include mobilePoster();
+                width: 290px;
+                height: 200px;
+                background-color: rgba(172, 169, 169, 0.8);
+                padding: 0 20px;
+            }
+        }
+    }
+
+
+
+    // laptop
+
+    @media (min-width: 768px) {
+        & {
+            margin-top: 15vh;
+            height: 720px;
+
+            &__title {
+                @include laptopPoster();
+                font-size: xx-large;
+                width: 600px;
+                height: 400px;
+                background-color: rgba(172, 169, 169, 0.7);
+                padding: 20px;
+            }
+        }
+    }
+
+
+
+
+}

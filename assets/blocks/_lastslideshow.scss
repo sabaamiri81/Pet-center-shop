@@ -1,0 +1,47 @@
+.lastslideshow {
+
+
+
+  // mobile
+
+  @media (max-width: 768px) {
+    & {
+      @include displayFlex();
+      background-image: url('./images/slideshows/slideshow3.jpg');
+      background-size: cover;
+      width: $w-100;
+      height: 270px;
+
+      &__title {
+        width: 290px;
+        height: 200px;
+        background-color: rgba(172, 169, 169, 0.8);
+        font-size: xx-small;
+        padding: 20px;
+      }
+    }
+  }
+
+  // laptop
+
+  @media (min-width: 768px) {
+
+    & {
+      background-image: url('./images/slideshows/slideshow3.jpg');
+      background-size: cover;
+      width: $w-100;
+      height: 600px;
+      position: relative;
+
+      &__title {
+        width: 600px;
+        height: 300px;
+        background-color: rgba(172, 169, 169, 0.5);
+        padding: 20px;
+        position: absolute;
+        top: 150px;
+        right: 350px;
+      }
+    }
+  }
+}

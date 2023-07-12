@@ -1,0 +1,46 @@
+@mixin displayFlex($justify :center, $align :center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin displayNone() {
+    display: none;
+}
+
+@mixin center($width) {
+    width: $width;
+    margin: auto;
+
+}
+
+@mixin flow($dir: row, $wrap: nowrap) {
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin fix() {
+    position: fixed;
+    top: 0;
+}
+
+@mixin animation() {
+    animation-name: box360;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@mixin laptopPoster() {
+    animation-name: laptop-poster;
+    animation-duration: 3s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+}
+
+@mixin mobilePoster() {
+    animation-name: mobile-poster;
+    animation-duration: 3s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+}

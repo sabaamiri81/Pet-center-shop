@@ -1,0 +1,16 @@
+// shared
+
+@import './shared/variables';
+@import './shared/normalize';
+@import './shared/mixin';
+@import './shared/animation';
+
+// blocks
+@import './blocks/body';
+@import './blocks/nav';
+@import './blocks/header';
+@import './blocks/slideshow';
+@import './blocks/card';
+@import './blocks/poster';
+@import './blocks/lastslideshow';
+@import './blocks/footer';
