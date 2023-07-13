@@ -12,6 +12,10 @@
             &__location{
                 @include displayFlex(center,flex-start);
                 @include flow(column);
+                list-style-type: none;
+
+
+                
                 
                 &--title{
                     color: $header-bg-color;
@@ -27,6 +31,8 @@
             &__information{
                 @include displayFlex(center,flex-start);
                 @include flow(column);
+                list-style-type: none;
+
 
                 &--title{
                     color: $header-bg-color;
@@ -45,6 +51,8 @@
             &__connection{
                 @include displayFlex(center,flex-start);
                 @include flow(column);
+                list-style-type: none;
+
 
                 &--title{
                     color: $header-bg-color;
@@ -61,7 +69,7 @@
             }
 
             &__img{
-                margin-top: -20px;
+                margin-top: -30px;
                 margin-left: 175px;
             }
         }
@@ -86,6 +94,8 @@
                 @include displayFlex(center,flex-start);
                 @include flow(column);
                 width: 250px;
+                list-style-type: none;
+
                 
                 &--title{
                     color: $header-bg-color;
@@ -101,6 +111,8 @@
             &__information{
                 @include displayFlex(center,flex-start);
                 @include flow(column);
+                list-style-type: none;
+
 
                 &--title{
                     color: $header-bg-color;
@@ -118,6 +130,8 @@
             &__connection{
                 @include displayFlex(center,flex-start);
                 @include flow(column);
+                list-style-type: none;
+
 
                 &--title{
                     color: $header-bg-color;
@@ -133,7 +147,7 @@
             }
 
             &__img{
-                margin-top: 610px;
+                margin-top: 680px;
             }
         }
     
