@@ -36,7 +36,7 @@
 
                         &--image {
                             width: $w-100 ;
-                            height:80px ;
+                            height: 80px;
                         }
                     }
 
@@ -63,6 +63,7 @@
             }
 
             &__all {
+                @include all-buttom-mobile();
                 background-color: $header-bg-color;
                 font-size: smaller;
                 color: $white;
@@ -91,9 +92,12 @@
                 margin: 60px 0px;
 
                 &__product {
+                    box-shadow: 20px 10px 15px 15px rgb(176, 176, 176);
                     background-color: $white;
-                    border-radius: 5px;
+                    border-radius: 50px;
                     padding: 25px;
+                    margin: 0px 50px;
+                    width: 220px;
 
 
                     &__img {
@@ -107,10 +111,18 @@
                     &__explain {
 
                         &--buy {
-                            background-color: $header-bg-color;
+                            background-color: $white;
+                            border: 2px solid $header-bg-color;
+                            color: $header-bg-color;
                             padding: 10px;
                             border-radius: 8px;
-                            color: $white;
+
+                            &:hover {
+                                background-color: $header-bg-color;
+                                color: $white;
+                                padding: 15px;
+                            }
+
                         }
                     }
 
@@ -118,6 +130,7 @@
             }
 
             &__all {
+                @include all-buttom-mobile();
                 background-color: $header-bg-color;
                 color: $white;
                 padding: 15px 40px;

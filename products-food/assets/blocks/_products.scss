@@ -1,0 +1,77 @@
+.main {
+    background-color: $white;
+
+
+    // mobile
+    @media (max-width: 768px) {
+
+        & {
+            
+            &__row {
+
+                &__card {
+                    @include displayFlex();
+                    @include flow (column);
+                    @include center(230px);
+                    border-bottom: 3px solid $body-bg-color;
+                    padding: 40px 0px;
+                    
+
+                    &--explain {
+
+                        &--buy {
+                            background-color: $header-bg-color;
+                            padding: 5px;
+                            border-radius: 8px;
+                            font-size: x-small;
+                            color: $white;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // laptop
+    @media (min-width: 768px) {
+
+        & {
+            padding-top: 200px;
+
+            &__row {
+                @include displayFlex(space-between);
+                padding-bottom: 50px;
+                margin: 0px 40px 70px 40px;
+                border-bottom: 2px solid $body-bg-color;
+
+                &__card {
+
+                    width: 250px;
+
+                    &--explain {
+                        
+                        &--buy {
+                            background-color: $white;
+                            border: 2px solid $header-bg-color;
+                            color: $header-bg-color;
+                            padding: 10px;
+                            border-radius: 15px;
+
+                            &:hover{
+                                background-color: $header-bg-color;
+                                color: $white;
+                                padding: 15px;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

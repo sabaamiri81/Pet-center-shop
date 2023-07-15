@@ -1,0 +1,10 @@
+body {
+    background-color: $body-bg-color;
+   
+    @media (min-width: 768px) {
+        & {
+            @include center(85%);
+        }
+    }
+
+}

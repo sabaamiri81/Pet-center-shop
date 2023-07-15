@@ -1,0 +1,127 @@
+.footer {
+
+    // mobile
+    @media (max-width: 768px) {
+
+        & {
+            margin: 50px 0px;
+            border-bottom: 1px solid rgb(207, 197, 197);
+            padding: 0px 30px;
+
+            &__location {
+                @include footerLists();
+
+
+                &--title {
+                    @include footerTitle;
+                }
+
+                &--address {
+                    margin-top: $footer-explain-margin-top;
+                }
+            }
+
+            &__information {
+                @include footerLists();
+
+                &--title {
+                    @include footerTitle;
+                    margin-top: 30px;
+
+                }
+
+
+                &--explain {
+                    margin-top: $footer-explain-margin-top;
+                }
+            }
+
+            &__connection {
+                @include footerLists();
+
+
+                &--title {
+                    @include footerTitle;
+                    margin-top: 30px;
+
+                }
+
+
+                &--social {
+                    margin-top: $footer-explain-margin-top;
+                }
+            }
+
+            &__img {
+                margin-top: -30px;
+                margin-left: 175px;
+            }
+        }
+
+    }
+
+
+
+
+
+
+    // laptop
+    @media (min-width: 768px) {
+        & {
+            @include displayFlex(space-between, flex-start);
+            margin: 50px 0px;
+            border-bottom: 1px solid rgb(207, 197, 197);
+            border-left: 1px solid rgb(207, 197, 197);
+            padding: 0px 50px;
+
+            &__location {
+                @include footerLists();
+                width: 250px;
+
+
+                &--title {
+                    @include footerTitle;
+                }
+
+                &--address {
+                    margin-top: $footer-explain-margin-top;
+                }
+            }
+
+            &__information {
+                @include footerLists();
+
+
+                &--title {
+                    @include footerTitle;
+                }
+
+
+                &--explain {
+                    margin-top: $footer-explain-margin-top;
+                }
+            }
+
+            &__connection {
+                @include footerLists();
+
+
+
+                &--title {
+                    @include footerTitle;
+                }
+
+
+                &--social {
+                    margin-top: $footer-explain-margin-top;
+                }
+            }
+
+            &__img {
+                margin-top: 680px;
+            }
+        }
+
+    }
+
+}

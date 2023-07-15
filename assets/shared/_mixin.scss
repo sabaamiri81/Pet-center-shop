@@ -24,6 +24,49 @@
     top: 0;
 }
 
+// slide show
+
+@mixin btnMobileSlideshow(){
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+@mixin btnLaptopSlideshow(){
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 40px;
+
+}
+
+
+// product
+
+@mixin imgSize() {
+    width: 220px;
+    height: 220px;
+}
+
+// footer
+
+@mixin footerLists() {
+    @include displayFlex(center, flex-start);
+    @include flow(column);
+    list-style-type: none;
+}
+
+@mixin footerTitle() {
+    color: $header-bg-color;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+// animations
+
 @mixin animation() {
     animation-name: box360;
     animation-duration: 2s;

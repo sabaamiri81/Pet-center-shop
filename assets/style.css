@@ -82,6 +82,68 @@ a {
     opacity: 1;
   }
 }
+@-webkit-keyframes last-poster-laptop {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+@keyframes last-poster-laptop {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+@-webkit-keyframes last-poster-mobile {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+}
+@keyframes last-poster-mobile {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+}
+@-webkit-keyframes all-buttom-mobile {
+  from {
+    background-color: #c00108;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: #c00108;
+    border: 1px solid #c00108;
+  }
+}
+@keyframes all-buttom-mobile {
+  from {
+    background-color: #c00108;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: #c00108;
+    border: 1px solid #c00108;
+  }
+}
 body {
   background-color: #ebebeb;
 }
@@ -594,6 +656,14 @@ body {
     color: white;
   }
   .container__all {
+    -webkit-animation-name: all-buttom-mobile;
+            animation-name: all-buttom-mobile;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     background-color: #c00108;
     font-size: smaller;
     color: white;
@@ -622,8 +692,10 @@ body {
     margin: 60px 0px;
   }
   .container__card__product {
+    -webkit-box-shadow: 20px 10px 15px 15px rgb(176, 176, 176);
+            box-shadow: 20px 10px 15px 15px rgb(176, 176, 176);
     background-color: white;
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 25px;
   }
   .container__card__product__img--image {
@@ -631,12 +703,26 @@ body {
     height: 220px;
   }
   .container__card__product__explain--buy {
-    background-color: #c00108;
+    background-color: white;
+    border: 2px solid #c00108;
+    color: #c00108;
     padding: 10px;
     border-radius: 8px;
+  }
+  .container__card__product__explain--buy:hover {
+    background-color: #c00108;
     color: white;
+    padding: 15px;
   }
   .container__all {
+    -webkit-animation-name: all-buttom-mobile;
+            animation-name: all-buttom-mobile;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     background-color: #c00108;
     color: white;
     padding: 15px 40px;
@@ -715,6 +801,14 @@ body {
     height: 271px;
   }
   .lastslideshow__title {
+    -webkit-animation-name: last-poster-mobile;
+            animation-name: last-poster-mobile;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     width: 290px;
     height: 200px;
     background-color: rgba(172, 169, 169, 0.8);
@@ -731,6 +825,14 @@ body {
     position: relative;
   }
   .lastslideshow__title {
+    -webkit-animation-name: last-poster-laptop;
+            animation-name: last-poster-laptop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     width: 600px;
     height: 300px;
     background-color: rgba(172, 169, 169, 0.5);

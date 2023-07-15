@@ -1,0 +1,12 @@
+// shared
+
+@import './shared/variables';
+@import './shared/normalize';
+@import './shared/mixin';
+
+// blocks
+@import './blocks/body';
+@import './blocks/nav';
+@import './blocks/header';
+@import'./blocks/main';
+@import './blocks/footer';

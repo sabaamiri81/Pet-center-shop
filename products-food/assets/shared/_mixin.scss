@@ -1,0 +1,69 @@
+@mixin displayFlex($justify :center, $align :center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin displayNone() {
+    display: none;
+}
+
+@mixin center($width) {
+    width: $width;
+    margin: auto;
+
+}
+
+@mixin flow($dir: row, $wrap: nowrap) {
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin fix() {
+    position: fixed;
+    top: 0;
+}
+
+// products
+
+@mixin imgSize() {
+    width: 220px;
+    height: 220px;
+}
+
+// footer
+
+@mixin footerLists() {
+    @include displayFlex(center, flex-start);
+    @include flow(column);
+    list-style-type: none;
+}
+
+@mixin footerTitle() {
+    color: $header-bg-color;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+// animations
+
+@mixin animation() {
+    animation-name: box360;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@mixin laptopPoster() {
+    animation-name: laptop-poster;
+    animation-duration: 3s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+}
+
+@mixin mobilePoster() {
+    animation-name: mobile-poster;
+    animation-duration: 3s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+}

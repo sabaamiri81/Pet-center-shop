@@ -44,46 +44,46 @@
 
 
                 &--contact {
-                    margin: 0px 10px;
+                    margin: $nav-items-margin;
 
                     // &::before {
-                    //         content:"";
-                    //         background-image: url(/contact.svg);
-                    //         display: block;
-                    //         background-size: $w-100;
-                    //         width: 1.4rem;
-                    //         height: 1.4rem;
-                    //     }
+                    //     content: "";
+                    //     background-image: url(./images/nav/contact.svg);
+                    //     display: block;
+                    //     background-size: $w-100;
+                    //     width: 1.4rem;
+                    //     height: 1.4rem;
+                    // }
                 }
 
                 &--facebook {
-                    margin: 0px 10px;
+                    margin: $nav-items-margin;
                 }
 
                 &--instagram {
-                    margin: 0px 10px;
+                    margin: $nav-items-margin;
                 }
 
                 &--youtube {
-                    margin: 0px 5px;
+                    margin: $nav-items-margin;
                 }
             }
 
             &__left {
                 &--question {
-                    margin-right: 10px;
+                    margin: $nav-items-margin;
                 }
 
                 &--stores {
-                    margin: 0px 10px;
+                    margin: $nav-items-margin;
                 }
 
                 &--vet {
-                    margin: 0px 10px;
+                    margin: $nav-items-margin;
                 }
 
                 &--pet {
-                    margin: 0px 10px;
+                    margin: $nav-items-margin;
                 }
             }
 
