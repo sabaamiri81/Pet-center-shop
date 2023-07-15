@@ -75,14 +75,6 @@ body {
   .nav__right--contact {
     margin: 0px 10px;
   }
-  .nav__right--contact::before {
-    content: "";
-    background-image: url(./images/nav/contact.svg);
-    display: block;
-    background-size: 100%;
-    width: 1.4rem;
-    height: 1.4rem;
-  }
   .nav__right--facebook {
     margin: 0px 10px;
   }

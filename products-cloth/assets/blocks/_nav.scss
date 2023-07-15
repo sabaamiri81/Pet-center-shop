@@ -46,14 +46,14 @@
                 &--contact {
                     margin: $nav-items-margin;
 
-                    &::before {
-                        content: "";
-                        background-image: url(./images/nav/contact.svg);
-                        display: block;
-                        background-size: $w-100;
-                        width: 1.4rem;
-                        height: 1.4rem;
-                    }
+                    // &::before {
+                    //     content: "";
+                    //     background-image: url(./images/nav/contact.svg);
+                    //     display: block;
+                    //     background-size: $w-100;
+                    //     width: 1.4rem;
+                    //     height: 1.4rem;
+                    // }
                 }
 
                 &--facebook {

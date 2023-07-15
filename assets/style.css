@@ -206,14 +206,6 @@ body {
   .nav__right--contact {
     margin: 0px 10px;
   }
-  .nav__right--contact::before {
-    content: "";
-    background-image: url(./images/nav/contact.svg);
-    display: block;
-    background-size: 100%;
-    width: 1.4rem;
-    height: 1.4rem;
-  }
   .nav__right--facebook {
     margin: 0px 10px;
   }
@@ -221,10 +213,10 @@ body {
     margin: 0px 10px;
   }
   .nav__right--youtube {
-    margin: 0px 5px;
+    margin: 0px 10px;
   }
   .nav__left--question {
-    margin-right: 10px;
+    margin: 0px 10px;
   }
   .nav__left--stores {
     margin: 0px 10px;
@@ -481,12 +473,12 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    background-color: #6e4f39;
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 20px;
+    background-color: #6e4f39;
   }
   .section__slideshow__icon--2 {
     -webkit-animation-name: box360;
@@ -497,12 +489,12 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    background-color: #ad856c;
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 20px;
+    background-color: #ad856c;
   }
   .section__slideshow__icon--3 {
     -webkit-animation-name: box360;
@@ -513,12 +505,12 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    background-color: #e1b08b;
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 20px;
+    background-color: #e1b08b;
   }
 }
 @media (min-width: 768px) {
@@ -552,12 +544,12 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    background-color: #6e4f39;
     display: inline-block;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin: 40px;
+    background-color: #6e4f39;
   }
   .section__slideshow__icon--2 {
     -webkit-animation-name: box360;
@@ -568,12 +560,12 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    background-color: #ad856c;
     display: inline-block;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin: 40px;
+    background-color: #ad856c;
   }
   .section__slideshow__icon--3 {
     -webkit-animation-name: box360;
@@ -584,12 +576,12 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    background-color: #e1b08b;
     display: inline-block;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin: 40px;
+    background-color: #e1b08b;
   }
 }
 
@@ -803,8 +795,8 @@ body {
   .lastslideshow__title {
     -webkit-animation-name: last-poster-mobile;
             animation-name: last-poster-mobile;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
@@ -827,8 +819,8 @@ body {
   .lastslideshow__title {
     -webkit-animation-name: last-poster-laptop;
             animation-name: last-poster-laptop;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
@@ -967,8 +959,8 @@ body {
             flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 250px;
     list-style-type: none;
+    width: 250px;
   }
   .footer__location--title {
     color: #c00108;
