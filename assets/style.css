@@ -647,7 +647,7 @@ body {
     font-size: xx-small;
     color: white;
   }
-  .container__all {
+  .container__all__link {
     -webkit-animation-name: all-buttom-mobile;
             animation-name: all-buttom-mobile;
     -webkit-animation-duration: 1s;
@@ -706,7 +706,7 @@ body {
     color: white;
     padding: 15px;
   }
-  .container__all {
+  .container__all__link {
     -webkit-animation-name: all-buttom-mobile;
             animation-name: all-buttom-mobile;
     -webkit-animation-duration: 1s;
