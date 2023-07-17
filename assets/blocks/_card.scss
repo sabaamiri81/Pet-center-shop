@@ -63,12 +63,16 @@
             }
 
             &__all {
-                @include all-buttom-mobile();
-                background-color: $header-bg-color;
-                font-size: smaller;
-                color: $white;
-                padding: 5px 10px;
-                margin-left: 140px;
+
+                &__link{
+                    @include all-buttom-mobile();
+                    background-color: $header-bg-color;
+                    font-size: smaller;
+                    color: $white;
+                    padding: 5px 10px;
+                    margin-left: 140px;
+                }
+              
             }
 
         }
@@ -128,10 +132,14 @@
             }
 
             &__all {
-                @include all-buttom-mobile();
-                background-color: $header-bg-color;
-                color: $white;
-                padding: 15px 40px;
+
+                &__link{
+                    @include all-buttom-mobile();
+                    background-color: $header-bg-color;
+                    color: $white;    
+                    padding: 15px 40px;
+                }
+                
             }
         }
     }
