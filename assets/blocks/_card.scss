@@ -122,7 +122,8 @@
                             &:hover {
                                 background-color: $header-bg-color;
                                 color: $white;
-                                padding: 15px;
+                                transform: scale(1.1);
+                                transition: .5s;
                             }
 
                         }

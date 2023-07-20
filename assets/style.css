@@ -704,7 +704,10 @@ body {
   .container__card__product__explain--buy:hover {
     background-color: #c00108;
     color: white;
-    padding: 15px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .container__all__link {
     -webkit-animation-name: all-buttom-mobile;
